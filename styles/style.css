@@ -1,0 +1,98 @@
+/*Colors
+#16c5a6 //backgrounds/theme
+535657 //text
+B7ADCF //navbar
+DEE7E7 //highlighted text
+F4FAFF //background
+*/
+
+body {
+    background-color: #F4FAFF;
+}
+
+.navbar-custom {
+    background-color: #B7ADCF;
+    border-color: #535657;
+}
+
+.navbar-custom .navbar-brand {
+    color: #535657
+}
+
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus {
+    color: #DEE7E7;
+}
+
+.navbar-custom .navbar-text {
+    color: #535657;
+}
+
+.navbar-custom .navbar-nav > li > a {
+    color: #535657;
+}
+
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus {
+    color: #535657;
+    background-color: #16C5A6;
+}
+
+.navbar-custom .navbar-nav > .active > a,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus {
+    color: #DEE7E7;
+    background-color: #16C5A6;
+}
+
+.navbar-custom .navbar-toggle {
+    border-color: #535657;
+}
+
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+    background-color: #535657;
+}
+
+.navbar-custom .navbar-toggle .icon-bar {
+    background-color: #ecf0f1;
+}
+
+.navbar-custom .navbar-collapse,
+.navbar-custom .navbar-form {
+    border-color: #ecf0f1;
+}
+
+.navbar-custom .navbar-link {
+    color: #ecf0f1;
+}
+
+.navbar-custom .navbar-link:hover {
+    color: #ffbbbc;
+}
+
+@media (max-width: 767px) {
+    .navbar-custom .navbar-nav .open .dropdown-menu > li > a {
+        color: #ecf0f1;
+    }
+    .navbar-custom .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-custom .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #ffbbbc;
+    }
+    .navbar-custom .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #ffbbbc;
+        background-color: #ef27a6;
+    }
+}
+
+.jumbotron {
+    background-color: #16c5a6;
+    color: #535657;
+}
+
+.footer1 {
+    margin-top: 40px;
+    background-color: #16c5a6;
+}
