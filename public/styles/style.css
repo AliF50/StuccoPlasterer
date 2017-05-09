@@ -90,6 +90,7 @@ body {
 .jumbotron {
     background-color: #16c5a6;
     color: #535657;
+    margin-top: -20px;
 }
 
 .footer1 {
