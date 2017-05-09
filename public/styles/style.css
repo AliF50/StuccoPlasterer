@@ -97,3 +97,26 @@ body {
     margin-top: 40px;
     background-color: #16c5a6;
 }
+
+.demo-bg {
+    margin-top: 60px;
+}
+
+.business-hours {
+    padding-right: 15px;
+    position: relative;
+}
+
+.business-hours li {
+    color: #888;
+    line-height: 30px;
+    border-bottom: 1px solid #333;
+}
+
+.business-hours li:last-child {
+    border-bottom: none;
+}
+
+.today {
+    color: #16c5a6 !important;
+}
