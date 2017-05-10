@@ -6,6 +6,10 @@ DEE7E7 //highlighted text
 F4FAFF //background
 */
 
+html {
+    margin-bottom: 65px;
+}
+
 body {
     background-color: #F4FAFF;
 }
@@ -93,9 +97,13 @@ body {
     margin-top: -20px;
 }
 
-.footer1 {
-    margin-top: 40px;
+.footer {
+    margin-top: 20px;
     background-color: #16c5a6;
+}
+
+.nvabar-fixed-bottom {
+    margin-top: 20px !important;
 }
 
 .demo-bg {
