@@ -12,9 +12,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link rel="stylesheet" href="./public/styles/style.css">
     <link rel="icon" href="./public/images/favicon.png">
+    <link href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
 </head>
 
-<body>
+<body ng-app='app'>
     <nav class="navbar navbar-custom">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -23,70 +25,23 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Stucco Plasterer</a>
+                <a class="navbar-brand" ui-sref="home">Stucco Plasterer</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="index.html"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> About Us</a></li>
+                    <li><a ui-sref="home"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> About Us</a></li>
                     <li>
-                        <a href="contactus.html"><span class="glyphicon glyphicon-phone"></span> Contact Us</a>
+                        <a ui-sref="contact"><span class="glyphicon glyphicon-phone"></span> Contact Us</a>
                     </li>
-                    <li><a href="testimonials.html"><span class = "glyphicon glyphicon-list-alt"></span> Testimonials</a></li>
-                    <li><a href="gallery.html"><span class = "glyphicon glyphicon-picture"></span> Gallery</a></li>
+                    <li><a ui-sref="testimonials"><span class = "glyphicon glyphicon-list-alt"></span> Testimonials</a></li>
+                    <li><a ui-sref="gallery"><span class = "glyphicon glyphicon-picture"></span> Gallery</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- Separation of navigation and contents -->
-    <div class="jumbotron text-center">
-        <h1>Stucco Plasterer</h1>
-        <p>The best Stucco Plasterer in town!</p>
-    </div>
-    <!--Separation of Jumbotron and Carousel -->
     <div class="container">
-        <!--Fix with proper pictures !! -->
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-                <div class="item active">
-                    <img src="./public/images/carousel1.jpg" alt="Los Angeles" style="width:100%;">
-                </div>
-                <div class="item">
-                    <img src="./public/images/carousel2.jpg" alt="Chicago" style="width:100%;">
-                </div>
-                <div class="item">
-                    <img src="./public/images/carousel3.jpg" alt="New york" style="width:100%;">
-                </div>
-            </div>
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-    </div>
-    <hr />
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-sm-9">
-                <h1>
-            About Us
-            </h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut nesciunt cupiditate error, natus facilis itaque esse voluptatem sint eligendi provident eveniet, expedita pariatur amet, tempora voluptatibus a! Facere, labore inventore.
-                </p>
-            </div>
-        </div>
+        <div ui-view></div>
     </div>
     <!--Separation of footer -->
     <footer class="footer navbar-fixed-bottom">
@@ -100,6 +55,12 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+    <script src="./public/src/app.js"></script>
+    <script src="./public/controllers/contactController.js"></script>
+    <script src="./public/controllers/testimonialsController.js"></script>
+    <script src="./public/controllers/galleryController.js"></script>
 </body>
 
 </html>

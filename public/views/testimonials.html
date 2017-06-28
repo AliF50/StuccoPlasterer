@@ -1,0 +1,16 @@
+<div class="container">
+    <h1>Testimonials</h1>
+    <div ng-repeat="testimonial in testimonials">
+        <div class="row">
+            <h3 class="text-center">{{testimonial.testimonial}} </h3>
+        </div>
+        <div class="row">
+            <hr/>
+        </div>
+        <div class="row">
+            <div class="col-xs-2 col-xs-offset-8">
+                <p>{{testimonial.author}}</p>
+            </div>
+        </div>
+    </div>
+</div>

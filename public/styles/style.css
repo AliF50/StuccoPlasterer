@@ -102,7 +102,7 @@ body {
     background-color: #16c5a6;
 }
 
-.nvabar-fixed-bottom {
+.navbar-fixed-bottom {
     margin-top: 20px !important;
 }
 
@@ -126,7 +126,26 @@ body {
 }
 
 .today {
-    color: #16c5a6 !important;
+    background-color: lightgrey !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Corben', Georgia, Times, serif;
+}
+
+p,
+a,
+div {
+    font-family: 'Nobile', Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    text-shadow: 1px 1px 1px #ccc;
 }
 
 
@@ -136,6 +155,7 @@ body {
     margin-bottom: 15px;
 }
 
-.hover {
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+.carousel {
+    width: 400px;
+    height: 400px;
 }

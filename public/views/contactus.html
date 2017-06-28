@@ -1,0 +1,26 @@
+<div class="container-fluid bg-grey">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Contact Us</h2>
+            <p>Contact us with the following methods.</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span>{{contact.address}}
+                <br />&nbsp;&nbsp;&nbsp;&nbsp;{{contact.city}}
+            </p>
+            <p><span class="glyphicon glyphicon-phone"></span>{{contact.phone}}</p>
+            <p><span class="glyphicon glyphicon-envelope"></span><a href="mailto: {{contact.email}}">{{contact.email}}</a></p>
+        </div>
+        <div class="col-md-6">
+            <div class="business-hours">
+                <h2 class="title">Opening Hours</h2>
+                <ul class="list-unstyled">
+                    <li ng-repeat="schedule in openingHours" ng-class="{'today': schedule.number === today}">{{schedule.day}} <span class="pull-right">{{schedule.time}}</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <img src="./public/images/map.jpg">
+        </div>
+    </div>
+</div>
