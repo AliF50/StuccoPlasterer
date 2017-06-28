@@ -12,5 +12,4 @@ app.controller('TestimonialsController', ['$scope', function($scope) {
         'testimonial': 'These people simply know what they are doing!',
         'author': 'Mike'
     }, ];
-    $scope.message = "hello";
 }]);

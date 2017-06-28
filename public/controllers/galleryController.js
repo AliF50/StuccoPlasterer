@@ -9,7 +9,4 @@ app.controller('GalleryController', ['$scope', function($scope) {
         './public/images/gallery/5.jpg',
         './public/images/gallery/6.jpg',
     ];
-    $scope.changeHover = function() {
-
-    }
 }]);
