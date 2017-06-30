@@ -4,21 +4,36 @@ app.config(function($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/home');
 
     $stateProvider
-        .state('home', {
+        .state('root', {
+            url: '',
+            abstract: true,
+            views: {
+                'header': {
+                    templateUrl: 'public/views/nav.html'
+                },
+                'content': {
+                    template: '<div ui-view></div>'
+                },
+                'footer': {
+                    templateUrl: 'public/views/footer.html'
+                }
+            }
+        })
+        .state('root.home', {
             url: '/home',
             templateUrl: 'public/views/home.html',
         })
-        .state('contact', {
+        .state('root.contact', {
             url: '/contact',
             templateUrl: 'public/views/contactus.html',
             controller: 'ContactController',
         })
-        .state('testimonials', {
+        .state('root.testimonials', {
             url: '/testimonials',
             templateUrl: 'public/views/testimonials.html',
             controller: 'TestimonialsController'
         })
-        .state('gallery', {
+        .state('root.gallery', {
             url: '/gallery',
             templateUrl: 'public/views/gallery.html',
             controller: 'GalleryController'
